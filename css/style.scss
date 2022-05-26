@@ -1,0 +1,135 @@
+*{
+    box-sizing:border-box;
+}
+
+.toggle-btn{
+    width:130px;
+    height:55px;
+    border:2px solid red;
+    margin: 30px 20%;
+
+    border-radius:30px;
+    margin-bottom: 0;
+    display: flex;
+    // justify-content: center;     
+    align-items: center;
+   
+    .witch{
+        width:40px;
+        height:40px;
+        background:black;
+        border-radius:50%;
+        display: block;
+        margin-left: 10px;
+        cursor: pointer;
+        transition: 0.09s all ease-in-out;
+     
+    }
+    :active{
+        margin-left: 75px;
+        background: cadetblue;
+    }
+
+}
+
+.toggle{ 
+        margin:30px 20%;
+    .btn{
+        width:120px;
+        height:50px;
+        display:block;
+        border:2px solid darkcyan;
+        border-radius:30px;
+        box-shadow: 0 0 10px #000;
+        position:relative;
+        display: flex;
+        align-items: center;
+        background: #000;
+        cursor: pointer;
+
+
+      
+    }
+    :hover{
+        background: white;
+    }
+    ::after{
+        content:'';
+        position:absolute;
+        width:35px;
+        height:35px;
+        background: white;
+        border-radius:34px; 
+        margin-left: 10px;
+        box-shadow:0 0 5px #fff;
+        cursor:pointer;
+        transition:0.3s all ease;
+       
+    }
+
+    .active{
+        margin-left: 80px;
+    }
+    
+    :hover::after{
+        margin-left: 70px;
+        background: black;
+
+    }
+}
+
+.form-control{
+    width:50%;
+    height:40px;
+    background: #fff;
+    display:flex;
+    margin: 20px 20%;
+    i{
+        width:40px;
+        border:1px solid gray;
+        height:100%;
+        margin:0;
+        padding:0;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        font-size: 22px;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius:12px;
+        border-right: none;
+        // padding:20px;
+        color:grey;
+       
+        
+    }
+    :focus{
+        border:2px solid grey;
+    }
+   
+    input{
+        margin:0;
+        padding:0 10px;
+        // border:none;
+        outline:none;
+        // padding:20px;
+        // border:none;
+        border:1px solid gray;
+        border-top-right-radius:12px;
+        border-bottom-right-radius:12px;
+        // border-color: gray;
+        // display: inline-block;
+    }
+    :focus{
+        border:2px solid grey;
+        // border-left:none;
+        border-left:1px solid grey;
+    }
+    
+    ::placeholder{
+        color:gray;
+        font-size: 16px;
+        // margin-left: 10px;
+        letter-spacing: 1px;
+
+    }
+}
